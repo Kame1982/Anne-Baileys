@@ -1,0 +1,59 @@
+/*Estido de donde comprar*/
+body {
+    background-image: url("img/fondo3.jpg");
+    background-size: cover;
+    font-size: 25px;
+    text-align: center;
+}
+div.menu
+{   text-align: center;
+    margin: 0;
+    padding: 0;
+  } header{
+    font-family: Helvetica;
+    width: 480px;
+    margin: 0 auto;
+  }
+  ul{
+    list-style: none;
+    width: 620px;
+    margin: 0 auto;
+  }
+  #menu li>a{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+  }
+  #menu li>a:hover{              /* cambio de color cuando se sobrepone mouse */
+    color: rgb(168, 13, 13);
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center;
+  }
+  #menu>li>ul{
+    display: center;
+  }
+  #menu>li:hover>ul {
+    display:block;
+  }
+div.titulo {
+    text-align: center;
+    background-color: rgb(219, 118, 51);
+    color: rgb(44, 13, 156);
+    font-weight: bold
+}
+div.tiendas
+{
+grid: 0%;
+text-align:left;
+width: 620px;
+    margin: 0 auto;
+background-color: rgb(219, 118, 51);
+    color: rgb(44, 13, 156);
+    font-weight: bold
+}
