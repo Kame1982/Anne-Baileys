@@ -66,9 +66,85 @@
     </div>
 </nav>
 <!-- Navbar End -->
+<!-- barra de conctacto inicio-->
+<div class="container">
+</header>
+<h1>Formulario de Contacto</h1>
 
+<form action="contacto.html" id="formulario-contacto" class="row g-3">
+    <div class="col-md-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre">
+      <div id="feedback-nombre" class="">                    
+      </div>                  
+    </div>
 
-<!-- Footer Start -->
+    
+    <div class="col-md-6">
+      <label for="validationServer02" class="form-label">Apellido</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6">
+        <label for="validationServer01" class="form-label">Email</label>
+        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationServer02" class="form-label">Teléfono</label>
+        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+    <div class="col-md-12">
+      <label for="validationServer04" class="form-label">Sucursal</label>
+      <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+        <option selected disabled value="">Escoge...</option>
+        <option>Santiago</option>
+        <option>Valparaíso</option>
+      </select>
+      <div id="validationServer04Feedback" class="invalid-feedback">
+        Por favor escoja un lugar valido.
+      </div>
+    </div>
+    <div class="col-md-3">
+        <p>Motivo de contacto:</p>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Felicitación</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Queja</label>
+        </div>
+          <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck3">Consulta</label>
+            <div class="invalid-feedback">More example invalid feedback text</div>
+          </div>
+    </div>
+    <div class="col-12">
+        <label for="validationTextarea" class="form-label">Mensaje</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <div class="invalid-feedback">
+          Please enter a message in the textarea.
+        </div>
+    </div>
+    <div class="col-12">
+      <button id="boton" class="btn btn-primary">Submit form</button>
+    </div>
+  </form>
+</div>
+  <!-- barra de conctacto fin-->
+
+  <!-- Footer Start -->
 <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">

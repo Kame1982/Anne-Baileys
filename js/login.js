@@ -1,3 +1,5 @@
+// se implementa verificador de largo de password, ya que validacion de correo se hizo en css por medio de la definicion de la variable email, necesito agregar "@" para que sea un item valido. validacion se hizo en base a modelo de clases
+
 document.getElementById("floatingPassword").addEventListener("blur", (evento) => {
     const input = evento.currentTarget;
     const txtpassword = input.value;
