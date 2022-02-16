@@ -66,7 +66,8 @@
     </div>
 </nav>
 <!-- Navbar End -->
-<!-- barra de conctacto inicio-->
+
+<!-- formulario de contacto inicio-->
 <div class="container">
 </header>
 <h1>Formulario de Contacto</h1>
@@ -74,46 +75,34 @@
 <form action="contacto.html" id="formulario-contacto" class="row g-3">
     <div class="col-md-6">
       <label for="nombre" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="nombre">
+      <input type="text" class="form-control" id="nombre" placeholder="Pedro">
       <div id="feedback-nombre" class="">                    
       </div>                  
     </div>
 
-    
     <div class="col-md-6">
-      <label for="validationServer02" class="form-label">Apellido</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-      <div class="valid-feedback">
-        Looks good!
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="apellido" placeholder="Sanchez">
+      <div class="feedback-apellido">     
       </div>
     </div>
 
     <div class="col-md-6">
-        <label for="validationServer01" class="form-label">Email</label>
-        <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-        <div class="valid-feedback">
-          Looks good!
+        <label for="email" class="form-label">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="ejemplo@tucorreo.com">
+        <div class="feedback-email">
+         
         </div>
       </div>
       <div class="col-md-6">
-        <label for="validationServer02" class="form-label">Teléfono</label>
-        <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-        <div class="valid-feedback">
-          Looks good!
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="telefono"  placeholder="123456789">
+        <div class="feedback-telefono">
+          
         </div>
       </div>
 
-    <div class="col-md-12">
-      <label for="validationServer04" class="form-label">Sucursal</label>
-      <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-        <option selected disabled value="">Escoge...</option>
-        <option>Santiago</option>
-        <option>Valparaíso</option>
-      </select>
-      <div id="validationServer04Feedback" class="invalid-feedback">
-        Por favor escoja un lugar valido.
-      </div>
-    </div>
+    
     <div class="col-md-3">
         <p>Motivo de contacto:</p>
         <div class="form-check">
@@ -132,13 +121,13 @@
     </div>
     <div class="col-12">
         <label for="validationTextarea" class="form-label">Mensaje</label>
-        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Escriba su mensaje aqui" required></textarea>
         <div class="invalid-feedback">
-          Please enter a message in the textarea.
+         
         </div>
     </div>
     <div class="col-12">
-      <button id="boton" class="btn btn-primary">Submit form</button>
+      <button id="boton" class="btn btn-primary">Enviar</button>
     </div>
   </form>
 </div>
@@ -236,4 +225,5 @@
  
      <!-- Template Javascript -->
      <script src="js/main.js"></script>
+     <script src="js/contacto.js"></script>
 </body>
