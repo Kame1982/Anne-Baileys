@@ -19,24 +19,3 @@ document.getElementById("nombre").addEventListener("blur", (evento) => {
         feedbackNombre.className = "valid-feedback";
     }
 });
-//apellido
-document.getElementById("apellido").addEventListener("blur", (evento) => {
-    const input = evento.currentTarget;
-    const txtapellido = input2.value;
-
-    // let o const - formas recomendadas de variables o constantes
-    const feedbackapellido = document.getElementById("feedback-apellido");
-
-    if( txtapellido.length < 3 ) {        
-        feedbackapellido.innerHTML = "El nombre es muy corto.";
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        feedbackapellido.classapellido = "invalid-feedback";
-    
-    } else {        
-        feedbackapellido.innerHTML = "El nombre está OK";
-        input.classList.remove("is-invalid");
-        input.classList.add("is-valid");
-        feedbackapellido.classapellido= "valid-feedback";
-    }
-});
