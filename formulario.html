@@ -32,74 +32,75 @@
     <header></header>
 
 <!-- About Start -->
-<div class="container-xs py-5">
-  <div class="container">
-      <div class="row g-3">
-          <div class="col-lg-6" style="min-height: 800px;">
-              <div class="position-relative h-100">
-                  <img class="img-fluid position-absolute w-100 h-100" src="img/libro4.PNG" alt="Portada Llamado de una estrella" style="object-fit: cover;">
+<div class="container-xs py-5"> <!--entrega especio entre el menu principal y el cuerpo del formulario-->
+  <div class="container"> <!--contiene el formulario, sin el, formulario ocupa todo el ancho de la pagina-->
+    <div class="row g-3" > <!---->
+          <div class="col-lg-6" style="min-height: 900px;">  <!--define columa de la imagen y alto de la columna-->
+              <div class="position-relative h-100"> <!--se relacion con la sentencia siguiente, contiene a la imagen dentro de la columa ya que define la posicion-->
+                  <img class="img-fluid position-absolute w-100 h-100" src="img/libro4.PNG" alt="Portada Llamado de una estrella" style="object-fit: cover;">  <!--inserta la imagen y contiene -->
               </div>
           </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6"> <!--define columa siguiente-->
               <h6 class="section-title bg-white text-start text-primary pe-3">DISPONIBLE DESDE 30 DE FEBRERO</h6>
                 <h2 class="mb-4">RESERVA TU LIBRO HASTA EL 28 DE FEBRERO Y OBTEN DE UN 50% DE DESCUENTO EN LA COMPRA DE SUS LIBROS ANTERIORES.</h2>
-                <div class="formulario.form"> 
-               <form class="row g-w3 needs-validation" novalidate>
-                   
-                <div class="col-md-5 position-relative">
-                  <label for="validationTooltip01" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="validationTooltip01" placeholder="Jhon" required>
-                  <div class="valid-tooltip">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltip02" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="validationTooltip02" placeholder="Doe" required>
-                  <div class="valid-tooltip">
-                    Looks good!
-                  </div>
-                </div>
-                <div class="col-md-5 position-relative">
-                  <label for="validationTooltip03" class="form-label">Direccion de Envio</label>
-                  <input type="text" class="form-control" id="validationTooltip03" placeholder="Calle Falsa" required>
-                  <div class="invalid-tooltip">
-                    ingrese su Direccion.
-                  </div>
-                </div>
-                  <div class="col-md-4 position-relative">
-                    <label for="validationTooltip04" class="form-label">numero</label>
-                    <input type="number" class="form-control" id="validationTooltip04" placeholder="123" required>
-                    <div class="invalid-tooltip">
-                      ingrese su Direccion.
+                <form action="formulario.html" id="formulario-reserva" class="row g-3">
+                
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Jhon">
+                    <div id="feedback-nombre" class="valid-feedback">
                     </div>
-                </div>
-                <div class="col-md-5 position-relative">
-                  <label for="validationTooltip05" class="form-label">telefono</label>
-                  <input type="number" class="form-control" id="validationTooltip05" placeholder="123456789" required>
-                  <div class="invalid-tooltip">
-                    ingrese su Direccion.
                   </div>
-                </div>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltip06" class="form-label">Correo</label>
-                  <input type="email" class="form-control" id="validationTooltip06" placeholder="tucorreo@mail.com" required>
-                  <div class="invalid-tooltip">
-                    Please provide a valid city.
+                               
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Doe">
+                    <div id="feedback-apellido" class="valid-feedback">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-4 position-relative">
-                  <label for="validationTooltip07" class="form-label">Selecciona tu Version</label>
-                  <select class="form-select" id="validationTooltip07" required>
-                    <option selected disabled value="">Version Impresa</option>
-                    <option>Tapa Blanda</option>
-                    <option>Tapa Dura</option>
-                  </select>
-                  <div class="invalid-tooltip">
-                    escoja una version por favor.
-                  </div>
-                </div>
-                                <h5 class="mb-4"> Ademas estaras participando por una tarde con Anne Baileys donde podras hacer todas las preguntas que quieras sobre sus libros o como empezar a escribir uno propio.</h5>
+                
+                  <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="tucorreo@mail.com">
+                      <div id="feedback-email" class="valid-feedback">
+                       
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="telefono" class="form-label">Teléfono</label>
+                      <input type="number" class="form-control" id="telefono" placeholder="123456789">
+                      <div id="feedback-telefono" class="valid-feedback">
+                       
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <label for="direccion" class="form-label">Direccion De Envio</label>
+                      <input type="text" class="form-control" id="direccion" placeholder="Calle Falsa">
+                      <div id="feedback-direccion" class="valid-feedback">
+                      </div>
+                    </div>
+
+                    <div class="col-md-3">
+                      <label for="ncasa" class="form-label">Numero</label>
+                      <input type="number" class="form-control" id="ncasa" placeholder="123456">
+                      <div id="feedback-ncasa" class="valid-feedback">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="provincia" class="form-label">Provincia</label>
+                      <input type="text" class="form-control" id="provincia" placeholder="Alava">
+                      <div id="feedback-provincia" class="valid-feedback">
+                      </div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <label for="zip" class="form-label">Zip Code</label>
+                      <input type="number" class="form-control" id="zip" placeholder="28001">
+                      <div id="feedback-zip" class="valid-feedback">
+                      </div>
+                    </div>
+
+                    <h5 class="mb-4"> Ademas estaras participando por una tarde con Anne Baileys donde podras hacer todas las preguntas que quieras sobre sus libros o como empezar a escribir uno propio.</h5>
                    <div class="col-12">
                   <button class="btn btn-primary" type="submit">Reservar</button>
                 </div>
